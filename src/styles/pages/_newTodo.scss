@@ -1,0 +1,17 @@
+.new-task {
+    padding: 10rem;
+
+    @media (max-width: 576px) { 
+        padding: 2rem;
+    }
+
+    &__inner {
+        max-width: 420px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__main {
+        margin-top: 4rem;
+    }
+}

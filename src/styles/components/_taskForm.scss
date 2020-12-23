@@ -1,0 +1,54 @@
+.task-form {
+    width: 100%;
+    padding-top: 1rem;
+    transition: max-height 0.2s ease-out;
+
+    &__block {
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    &__cta {
+        margin-top: 2rem;
+
+        & > * {
+            cursor: pointer;
+        }
+    }
+
+    &--split {
+        @include flex($align: center, $justify: space-between, $wrap: nowrap, $dir: row);
+
+        & > * {
+            width: calc((100% - 30px) / 2);
+        }
+    }
+
+    &--hidden {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__input {
+        padding: 1.5rem 1rem;
+        border-radius: 5px;
+        outline: none;
+        border: 2px solid #DEDEDE;
+    }
+
+    &__desc {
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    &__date, &__priority {
+        padding: 1rem;
+    }
+
+    &__err-mess {
+        font-size: 1.5rem;
+        margin-top: .5rem;
+        display: block;
+        color: #bf1650;
+    }
+}

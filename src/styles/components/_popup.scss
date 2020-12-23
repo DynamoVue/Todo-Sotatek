@@ -1,0 +1,30 @@
+.popup {
+    @include flex($align: center, $justify: space-between, $wrap: nowrap, $dir: row);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    padding: 2rem 1rem;
+    width: 100%;
+    background-color: lightblue;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s all ease-in;
+
+    &__title {
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+
+    &__cta {
+        & > *:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &--open {
+        transform: translateY(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+}

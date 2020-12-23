@@ -1,0 +1,43 @@
+.task {
+    border: 1px solid #dedede;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__display {
+        @include flex($align: center, $justify: space-between, $wrap: nowrap, $dir: row);
+
+        @media (max-width: 576px) { 
+            flex-direction: column;
+        }
+
+        &-left {
+            @include flex($align: center, $justify: flex-start, $wrap: nowrap, $dir: row);
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    &__completed {
+        vertical-align: middle;
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    &__cta {
+        & > *:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        @media (max-width: 576px) { 
+            margin-top: 1rem;   
+        }
+    }
+}

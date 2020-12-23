@@ -1,0 +1,32 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media (max-width: 576px) { 
+        font-size: 50%;
+    }
+
+    @media (max-width: 360px) { 
+        font-size: 45%;
+    }
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: segoe ui light;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+#container {
+    max-width: 960px;
+}

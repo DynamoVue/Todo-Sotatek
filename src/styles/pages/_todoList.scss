@@ -1,0 +1,33 @@
+.tasks {
+    padding: 2rem;
+
+    &__inner {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+    &__main {
+        margin-top: 4rem;
+    }
+
+    &__list {
+        margin-top: 3rem;
+        overflow-y: scroll;
+        height: 500px;
+    }
+}
+
+.todo-list__link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 1rem 2rem;
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
